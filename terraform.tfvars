@@ -13,3 +13,18 @@ cidrs = {
   rds2     = "10.0.6.0/24"
   rds3     = "10.0.7.0/24"
 }
+
+#security_group
+
+localip = "34.255.7.233/32"
+
+#s3_bucket
+
+domain_name = "domaintbyterransible"
+
+#rds
+
+db_instance_class = "db.t2.micro"
+dbname            = "wpdatabases"
+dbuser            = "wordpress"
+dbpassword        = "Oracle2233"
