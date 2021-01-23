@@ -28,3 +28,11 @@ db_instance_class = "db.t2.micro"
 dbname            = "wpdatabases"
 dbuser            = "wordpress"
 dbpassword        = "Oracle2233"
+
+#dev_instance
+
+dev_instance_type = "t2.micro"
+dev_ami = "ami-b73b63a0"
+public_key_path = "/root/.ssh/krypto.pub"
+key_name = "krypto"
+
