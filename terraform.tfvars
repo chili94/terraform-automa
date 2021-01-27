@@ -1,6 +1,6 @@
 #aws_profile = "wordpress"
 aws_region = "us-east-1"
-
+aws_profile = "wpterans"
 #aws-vpc-wp
 
 vpc_cidr = "10.0.0.0/16"
@@ -20,7 +20,7 @@ localip = "34.255.7.233/32"
 
 #s3_bucket
 
-domain_name = "domaintbyterransible"
+domain_name = "domainbyterransible"
 
 #rds
 
@@ -29,10 +29,18 @@ dbname            = "wpdatabases"
 dbuser            = "wordpress"
 dbpassword        = "Oracle2233"
 
-#dev_instance
+#dev_instancev
 
 dev_instance_type = "t2.micro"
 dev_ami = "ami-b73b63a0"
 public_key_path = "/root/.ssh/krypto.pub"
 key_name = "krypto"
 
+
+#elb
+
+elb_healthy_threshold   = "2"
+elb_unhealthy_threshold = "2"
+elb_timeout             = "3"
+elb_interval            = "30"
+~                                   
