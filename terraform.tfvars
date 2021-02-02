@@ -1,5 +1,5 @@
 #aws_profile = "wordpress"
-aws_region = "us-east-1"
+aws_region  = "us-east-1"
 aws_profile = "wpterans"
 #aws-vpc-wp
 
@@ -32,9 +32,9 @@ dbpassword        = "Oracle2233"
 #dev_instancev
 
 dev_instance_type = "t2.micro"
-dev_ami = "ami-b73b63a0"
-public_key_path = "/root/.ssh/krypto.pub"
-key_name = "krypto"
+dev_ami           = "ami-b73b63a0"
+public_key_path   = "/root/.ssh/krypto.pub"
+key_name          = "krypto"
 
 
 #elb
@@ -43,4 +43,15 @@ elb_healthy_threshold   = "2"
 elb_unhealthy_threshold = "2"
 elb_timeout             = "3"
 elb_interval            = "30"
-~                                   
+
+#launchconfig
+
+lc_instance_type = "t2.micro"
+
+#asg
+
+asg_max   = "2"
+asg_min   = "1"
+asg_grace = "300"
+asg_hct   = "EC2"
+asg_cap   = "2"
