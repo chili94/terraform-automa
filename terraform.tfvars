@@ -55,3 +55,7 @@ asg_min   = "1"
 asg_grace = "300"
 asg_hct   = "EC2"
 asg_cap   = "2"
+
+#route53
+
+delegation_set = "N09433991N83DM8PMNCBQ"
